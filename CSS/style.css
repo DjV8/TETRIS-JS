@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+}
+
+@media screen and (max-width: 714px) {
+  .container {
+    width: 100vw;
+  }
+  aside {
+    width: 100vw;
+    border-top-width: 0.4rem;
+    height: 16ch;
+    overflow: hidden;
+  }
+  aside span {
+    font-size: 150%;
+    float: left;
+    padding-right: 2ch;
+  }
+  .placeholder {
+    float: right;
+  }
+  .box {
+    flex-basis: 10%;
+    height: calc((100vh - 16ch) / 24);
+  }
+  main {
+    width: 100vw;
+  }
+  .pop-up span {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media screen and (min-width: 715px) {
+  .container {
+    width: 80vh;
+  }
+  aside {
+    height: 100%;
+    font-size: 250%;
+    border-left-width: 0.4rem;
+  }
+  .box {
+    flex-basis: 10%;
+    height: calc(100vh / 24);
+  }
+  .pop-up span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.row {
+  height: 100vh;
+  position: relative;
+  background-color: #383838;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+aside {
+  font-family: 'Caveat', cursive;
+  border-color: black;
+  border-style: solid;
+  color: ghostwhite;
+  padding: 1ch;
+  background: #3f5efb;
+  background: linear-gradient(0deg, #3f5efb 0%, #fc466b 100%);
+}
+
+.placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 12ch;
+  height: 12ch;
+}
+
+.fut-box {
+  width: 25%;
+  height: 25%;
+  float: left;
+}
+
+.box {
+  border: 1px solid cyan;
+  float: left;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.drawn {
+  border: 1px white solid;
+  border-radius: 0.3rem;
+}
+
+.pop-up {
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+}
+
+.pop-up h1 {
+  left: 50%;
+  transform: translate(-50%, 25%);
+  display: inline-block;
+  color: #689ee3;
+  position: relative;
+  text-shadow: 0 5px pink;
+  font-size: 500%;
+}
+
+.pop-up span {
+  display: inline-block;
+  color: #689ee3;
+  position: relative;
+  font-size: 200%;
+  text-shadow: 0 3px pink;
+}
+
+.btn {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  width: 20ch;
+  height: 5ch;
+  transform: translate(-50%, -50%);
+  background-color: #689ee3;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 150%;
+  text-shadow: 0 1px pink;
+}
+
+.btn:hover, .btn:focus {
+  transition: 0.5s;
+  background-color: #df68e3;
+  text-shadow: 0 1px #689ee3;
+  color: white;
+}
+
+#highscores {
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
